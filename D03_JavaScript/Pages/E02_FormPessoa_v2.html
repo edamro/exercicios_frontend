@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Pessoa</title>
+    <script src="../Scripts/E02_FormPessoa_v2.js"></script>
+</head>
+
+<body onload="LoadForm();">
+
+    <form id="formPessoa">
+
+        <table>
+
+            <tr>
+                <td>Nome <span class="Required">*</span></td>
+                <td>
+                    <input id="inputNome"
+                           type="text"
+                           maxlength="100"
+                           size="50"
+                           onblur="ValidateNome();">
+                    <br /><br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email <span class="Required">*</span></td>
+                <td>
+                    <input id="inputEmail"
+                           type="text"
+                           maxlength="30"
+                           size="50"
+                           onblur="ValidateEmail();">
+                    <br /><br />
+                </td>
+            </tr>
+            <tr>
+                <td>Telefone <span class="Required">*</span></td>
+                <td>
+                    <input id="inputTelefone"
+                           type="text"
+                           maxlength="14"
+                           size="15"
+                           onblur="ValidateTelefone();">
+                    <br /><br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Nif <span class="Required">*</span></td>
+                <td>
+                    <input id="inputNif"
+                           type="text"
+                           maxlength="9"
+                           size="10"
+                           onblur="ValidateNif();">
+                    <br /><br />
+                </td>
+            </tr>
+        </table>
+
+        <input id="buttonValidate" type="button" value="Validate" onclick="ValidateForm();" />
+        <input id="buttonReset" type="button" value="Reset" onclick="ClearForm();" />
+        <br /><br /><br /><br />
+        <p id="pMessage"></p>
+
+    </form>
+
+</body>
+</html>

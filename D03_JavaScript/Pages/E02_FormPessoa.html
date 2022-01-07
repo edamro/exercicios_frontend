@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form Pessoa</title>
+    <script src="../Scripts/E02_FormPessoa.js"></script>
+</head>
+
+<body>
+
+    <form id="myForm">
+        <label>Nome *</label>
+        <input id="textNome" type="text" value="" />
+        <br /><br />
+        <label>E-mail *</label>
+        <input id="textEmail" type="text" value="" />
+        <br /><br />
+        <label>Telefone *</label>
+        <input id="textTelefone" type="text" value="" />
+        <br /><br />
+        <label>NIF *</label>
+        <input id="textNif" type="text" value="" />
+        <br /><br />
+
+        <input id="buttonValidate" type="button" value="Validate" onclick="ValidateForm();" />
+        <input id="buttonReset" type="button" value="Reset" onclick="ClearForm();" />
+        <br /><br /><br /><br />
+        <p id="pMessage"></p>
+
+    </form>
+
+</body>
+</html>

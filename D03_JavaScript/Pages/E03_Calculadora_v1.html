@@ -1,0 +1,64 @@
+﻿<html lang="pt-pt">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Pessoa</title>
+    <script src="../Scripts/E03_JS_Calculadora_v1.js"></script>
+</head>
+
+<body onload="LoadForm();">
+
+    <header>
+        <h1>Calculadora Simples</h1>
+        <br /><br />
+    </header>
+
+    <form id="formValores">
+
+        <table>
+
+            <tr>
+                <td>Valor1 <span class="Required"></span></td>
+                <td>
+                    <input id="inputValor1"
+                           type="text"
+                           maxlength="15"
+                           size="15" />
+                    <br /><br />
+                </td>
+            </tr>
+
+            <tr>
+                <td>Valor2 <span class="Required"></span></td>
+                <td>
+                    <input id="inputValor2"
+                           type="text"
+                           maxlength="15"
+                           size="15" />
+                    <br /><br />
+                </td>
+            </tr>
+        </table>
+
+        <h3>
+            Operação
+            <button id="somar" onclick="somarValores()">+</button>
+            <button id="subtrair" onclick="subtrairValores()">-</button>
+            <button id="multiplicar" onclick="multiplicarValores()">*</button>
+            <button id="dividir" onclick="dividirValores()">/</button>
+        </h3>
+
+        <label for="res">Resultado:</label>
+        <input type="text" name="res" id="res" />
+        <br /><br />
+        <!--<label for="res">Resultado:</label>
+    <input type="text" name="res" id="res" />
+    <br /><br />
+
+    <input id="buttonReset" type="button" value="Reset" onclick="ClearForm();" />
+    <br /><br /><br /><br />
+    <!--<p id="pMessage"></p>-->
+
+    </form>
+
+</body>
+</html>
